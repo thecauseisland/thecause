@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop & Rewards</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Shop & Rewards</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Shop & Rewards</h1>
+    <div class="container nav-container">
+      <h1 class="logo">ShopReward</h1>
       <nav>
         <a href="#shop">Shop</a>
         <a href="#rewards">Rewards</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
+  <section id="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Discover Premium Products</h2>
+        <p>Redeem rewards, collect points, and enjoy exclusive perks.</p>
+        <a href="#shop" class="btn-primary">Start Shopping</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1593032457863-f554f2abfbe9?w=800" alt="Hero product">
+      </div>
+    </div>
+  </section>
+
   <section id="shop">
     <div class="container">
       <h2>🛍️ Shop Products</h2>
-      <div class="grid">
+      <div class="grid cards">
         <div class="card">
-          <img src="https://source.unsplash.com/300x200/?product" alt="Product">
-          <h3>Cool Gadget</h3>
-          <p>500 Points</p>
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f99912c9d2?w=400" alt="Smart Watch">
+          </div>
+          <h3>Smart Watch Series 5</h3>
+          <p class="price">1,200 Points</p>
         </div>
         <div class="card">
-          <img src="https://source.unsplash.com/301x200/?tech" alt="Product">
-          <h3>Smart Watch</h3>
-          <p>750 Points</p>
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" alt="Wireless Earbuds">
+          </div>
+          <h3>Noise‑Cancelling Earbuds</h3>
+          <p class="price">900 Points</p>
         </div>
         <div class="card">
-          <img src="https://source.unsplash.com/302x200/?device" alt="Product">
-          <h3>Wireless Earbuds</h3>
-          <p>1000 Points</p>
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=400" alt="Camera">
+          </div>
+          <h3>Mirrorless Camera</h3>
+          <p class="price">2,500 Points</p>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" alt="Headphones">
+          </div>
+          <h3>Studio Headphones</h3>
+          <p class="price">1,100 Points</p>
         </div>
       </div>
     </div>
@@ -44,7 +71,7 @@
   <section id="rewards">
     <div class="container">
       <h2>🎁 Rewards</h2>
-      <div class="grid">
+      <div class="grid cards reward-cards">
         <div class="card reward">
           <h3>5% Discount</h3>
           <p>Use 200 Points</p>
@@ -61,9 +88,10 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <div class="container">
-      <p>&copy; 2025 Shop & Rewards. All rights reserved.</p>
+      <p>Contact us: support@shopreward.com</p>
+      <p>&copy; 2025 ShopReward. All rights reserved.</p>
     </div>
   </footer>
 </body>
